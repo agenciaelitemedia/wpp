@@ -10,7 +10,7 @@ RUN docker-php-ext-configure zip && \
 
 RUN apk add --no-cache composer bash bash-completion git
 
-RUN 
+RUN cd /var/www
 RUN composer require wppconnect-team/wppconnect-php-client
 RUN rm -rf html
 RUN git clone https://github.com/agenciaelitemedia/wpp-php.git html
